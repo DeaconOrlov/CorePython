@@ -88,7 +88,7 @@ class Flight:
 
     def make_boarding_cards(self, card_printer):
         for passenger, seat in sorted(self._passenger_seats()):
-            card_printer(passenger, seat, self.number(), self._aircraft.model())
+            card_printer(passenger, seat, self.number(), self._aircraftmodel())
 
     def _passenger_seats(self):
         """An iterable series of passenger seating locations."""
